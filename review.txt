@@ -1,0 +1,12 @@
+Ketika Anda mengatur paddingLeft pada sebuah view, seharusnya tambahkan juga paddingRight agar simetris.
+Fungsi dan variable yang hanya diakses dari dalam sebuah class atau file, sebaiknya dijadikan private.
+
+Usahakan untuk memakai bahasa Inggris dalam penamaan sebuah variable atau komponen lain. Supaya tidak dianggap typo oleh Android Studio.
+
+Hilangkan redundansi kode seperti pada saat casting view. Ubah cara casting dari misalnya :
+txtNama = (TextView) findViewById(R.id.txt_name_detail);
+menjadi :
+
+txtNama = findViewById(R.id.txt_name_detail);
+Atau bisa juga menggunakan library ButterKnife untuk menyederhanakan penulisan komponen View.
+
